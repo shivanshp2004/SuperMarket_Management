@@ -402,7 +402,7 @@ void add_item(bool &flagy)
                         break;
                     }
                     cout << "\nItem Bought !!" << endl;
-                    bill *billy = new bill(i->name, quant, i->price * quant);
+                    bill *billy = new bill(i->name, quant, i->price);
                     b.push_back(billy);
                     i->quantity -= quant;
                     break;
@@ -444,7 +444,7 @@ void add_item(bool &flagy)
             cout << "  " << left << setw(nameWidth) << i->name
                  << right << setw(priceWidth) << fixed << setprecision(2) << i->price
                  << right << setw(quantityWidth) << i->quantity << endl;
-            total += i->price;
+            total += i->price*i->quantity;
         }
         cout << "\n TOTAL : " << total << "\n\n";
     }

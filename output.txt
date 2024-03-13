@@ -1,1 +1,6 @@
 soap 12 12 0 
+Biscuit 100 10 0 
+Soda 10 26 0 
+Oil 40 60 0 
+Pulses 30 100 0 
+Powder 80 50 0 
